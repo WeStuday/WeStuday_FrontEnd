@@ -10,8 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'cario': ['cario', 'sans-serif'],
-        'carioExtraBold': ['carioExtraBold', 'sans-serif'],
+        Tajawal: "'Tajawal', sans-serif "
       },
     },
   },

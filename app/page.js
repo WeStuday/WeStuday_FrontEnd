@@ -1,4 +1,7 @@
+import EducationalSubjects from './Components/EducationalSubjects/EducationalSubjects';
+import Features from './Components/Features';
 import Header from './Components/Header';
+import Hero from './Components/Hero';
 export const metadata = {
   title: 'موقع ندرس',
   description: 'موقع ندرس لرفع الملفات المدرسية',
@@ -15,6 +18,13 @@ export default function Home() {
   return (
     <>
       <Header/>
-    </>
+      <Hero/>
+      <Features/>
+      <EducationalSubjects/>
+      {/* 
+      <Benefits/>
+      <FrequentlyAsked/>
+      <Footer/> */}
+      </>
   )
 }
