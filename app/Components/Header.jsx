@@ -40,7 +40,7 @@ function Header() {
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex  ">
                 <li className=" text-lg leading-7 font-medium text-[--color-alt] py-2 md:px-3 text-center border-b-2 md:border-b-0  ">
-                  <Link href="#about" onClick={() => setNavbar(!navbar)}>
+                  <Link href="/" onClick={() => setNavbar(!navbar)}>
                     الرئيسية
                   </Link>
                 </li>
@@ -60,7 +60,7 @@ function Header() {
                   </Link>
                 </li>
               </ul>
-            <Button textinner="حول المنصة" nameLink='about' ClassNameAdd='md:mr-52'/>
+            <Button textinner="حول المنصة" nameLink='about' ClassNameAdd='md:mr-52 bg-[--seconderay]'/>
             </div>
           </div>
         </div>

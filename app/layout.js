@@ -1,5 +1,5 @@
+import { Header,Footer } from './Components';
 import './styles/globals.css'
-import Head from 'next/head';
 
 export const metadata = {
   title: 'موقع ندرس',
@@ -16,7 +16,11 @@ export default function RootLayout({ children }) {
       <link  rel="stylesheet" href="https://fonts.gstatic.com"  />
       <link  href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;800;900&display=swap" rel="stylesheet" />
       </head>
-      <body style={styles}>{children}</body>
+      <body style={styles}>
+      <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }

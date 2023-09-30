@@ -19,7 +19,7 @@ const Hero = () => {
           الخيار <span className='text-[--color-alt]'>الذكي</span> لمستقبلك
         </h1>
         <p>الدروس الجديدة يتم إضافتها بشكل دوري على هذه الصفحة، تابعنا لاستكمال باقي دروس المنهج</p>
-        <Button textinner="تصفح الملفات" nameLink='about' />
+        <Button textinner="تصفح الملفات" nameLink='about' ClassNameAdd='bg-[--seconderay] ' />
       </div>
 
       <div className='w-full md:w-1/2'>

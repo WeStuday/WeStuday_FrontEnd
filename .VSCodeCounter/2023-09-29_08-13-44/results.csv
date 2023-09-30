@@ -1,0 +1,23 @@
+"filename", "language", "JSON with Comments", "JavaScript", "JSON", "CSS", "Markdown", "XML", "JavaScript JSX", "comment", "blank", "total"
+"d:\WeStuday_FrontEnd\README.md", "Markdown", 0, 0, 0, 0, 23, 0, 0, 0, 14, 37
+"d:\WeStuday_FrontEnd\app\Components\Button.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 11, 0, 2, 13
+"d:\WeStuday_FrontEnd\app\Components\EducationalSubjects\EducationalSubjects.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 9, 0, 2, 11
+"d:\WeStuday_FrontEnd\app\Components\Features.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 62, 3, 9, 74
+"d:\WeStuday_FrontEnd\app\Components\Header.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 68, 2, 2, 72
+"d:\WeStuday_FrontEnd\app\Components\Hero.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 34, 0, 4, 38
+"d:\WeStuday_FrontEnd\app\Components\Logo.jsx", "JavaScript JSX", 0, 0, 0, 0, 0, 0, 18, 0, 2, 20
+"d:\WeStuday_FrontEnd\app\Components\index.js", "JavaScript", 0, 5, 0, 0, 0, 0, 0, 0, 2, 7
+"d:\WeStuday_FrontEnd\app\layout.js", "JavaScript", 0, 21, 0, 0, 0, 0, 0, 0, 2, 23
+"d:\WeStuday_FrontEnd\app\lib\@react-icons\index.js", "JavaScript", 0, 8, 0, 0, 0, 0, 0, 0, 2, 10
+"d:\WeStuday_FrontEnd\app\page.js", "JavaScript", 0, 28, 0, 0, 0, 0, 0, 2, 1, 31
+"d:\WeStuday_FrontEnd\app\styles\globals.css", "CSS", 0, 0, 0, 20, 0, 0, 0, 1, 2, 23
+"d:\WeStuday_FrontEnd\jsconfig.json", "JSON with Comments", 4, 0, 0, 0, 0, 0, 0, 4, 0, 8
+"d:\WeStuday_FrontEnd\next.config.js", "JavaScript", 0, 2, 0, 0, 0, 0, 0, 1, 2, 5
+"d:\WeStuday_FrontEnd\package-lock.json", "JSON", 0, 0, 1509, 0, 0, 0, 0, 0, 1, 1510
+"d:\WeStuday_FrontEnd\package.json", "JSON", 0, 0, 23, 0, 0, 0, 0, 0, 1, 24
+"d:\WeStuday_FrontEnd\postcss.config.js", "JavaScript", 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"d:\WeStuday_FrontEnd\public\img\hero-1.svg", "XML", 0, 0, 0, 0, 0, 14, 0, 0, 1, 15
+"d:\WeStuday_FrontEnd\public\img\hero-3.svg", "XML", 0, 0, 0, 0, 0, 7, 0, 0, 1, 8
+"d:\WeStuday_FrontEnd\public\img\hero-4.svg", "XML", 0, 0, 0, 0, 0, 6, 0, 0, 1, 7
+"d:\WeStuday_FrontEnd\tailwind.config.js", "JavaScript", 0, 16, 0, 0, 0, 0, 0, 2, 1, 19
+"Total", "-", 4, 86, 1532, 20, 23, 27, 202, 15, 53, 1962

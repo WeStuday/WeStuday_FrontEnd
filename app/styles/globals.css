@@ -21,3 +21,10 @@
   width: 100px; /* Adjust the width and height as per your requirements */
   height: 100px;
 }
+
+.active-tab{
+  color:#472758;
+  border-bottom: 4px solid #FF7426;
+}
+
+

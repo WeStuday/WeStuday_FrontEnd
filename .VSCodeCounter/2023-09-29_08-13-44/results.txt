@@ -1,0 +1,62 @@
+Date : 2023-09-29 08:13:44
+Directory : d:\WeStuday_FrontEnd
+Total : 21 files,  1894 codes, 15 comments, 53 blanks, all 1962 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          2 |      1,532 |          0 |          2 |      1,534 |
+| JavaScript JSX     |          6 |        202 |          5 |         21 |        228 |
+| JavaScript         |          7 |         86 |          5 |         11 |        102 |
+| XML                |          3 |         27 |          0 |          3 |         30 |
+| Markdown           |          1 |         23 |          0 |         14 |         37 |
+| CSS                |          1 |         20 |          1 |          2 |         23 |
+| JSON with Comments |          1 |          4 |          4 |          0 |          8 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                            | files      | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                               |         21 |      1,894 |         15 |         53 |      1,962 |
+| . (Files)                                                                       |          7 |      1,583 |          7 |         20 |      1,610 |
+| app                                                                             |         11 |        284 |          8 |         30 |        322 |
+| app (Files)                                                                     |          2 |         49 |          2 |          3 |         54 |
+| app\Components                                                                  |          7 |        207 |          5 |         23 |        235 |
+| app\Components (Files)                                                          |          6 |        198 |          5 |         21 |        224 |
+| app\Components\EducationalSubjects                                              |          1 |          9 |          0 |          2 |         11 |
+| app\lib                                                                         |          1 |          8 |          0 |          2 |         10 |
+| app\lib\@react-icons                                                            |          1 |          8 |          0 |          2 |         10 |
+| app\styles                                                                      |          1 |         20 |          1 |          2 |         23 |
+| public                                                                          |          3 |         27 |          0 |          3 |         30 |
+| public\img                                                                      |          3 |         27 |          0 |          3 |         30 |
++---------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                        | language           | code       | comment    | blank      | total      |
++---------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| d:\WeStuday_FrontEnd\README.md                                                  | Markdown           |         23 |          0 |         14 |         37 |
+| d:\WeStuday_FrontEnd\app\Components\Button.jsx                                  | JavaScript JSX     |         11 |          0 |          2 |         13 |
+| d:\WeStuday_FrontEnd\app\Components\EducationalSubjects\EducationalSubjects.jsx | JavaScript JSX     |          9 |          0 |          2 |         11 |
+| d:\WeStuday_FrontEnd\app\Components\Features.jsx                                | JavaScript JSX     |         62 |          3 |          9 |         74 |
+| d:\WeStuday_FrontEnd\app\Components\Header.jsx                                  | JavaScript JSX     |         68 |          2 |          2 |         72 |
+| d:\WeStuday_FrontEnd\app\Components\Hero.jsx                                    | JavaScript JSX     |         34 |          0 |          4 |         38 |
+| d:\WeStuday_FrontEnd\app\Components\Logo.jsx                                    | JavaScript JSX     |         18 |          0 |          2 |         20 |
+| d:\WeStuday_FrontEnd\app\Components\index.js                                    | JavaScript         |          5 |          0 |          2 |          7 |
+| d:\WeStuday_FrontEnd\app\layout.js                                              | JavaScript         |         21 |          0 |          2 |         23 |
+| d:\WeStuday_FrontEnd\app\lib\@react-icons\index.js                              | JavaScript         |          8 |          0 |          2 |         10 |
+| d:\WeStuday_FrontEnd\app\page.js                                                | JavaScript         |         28 |          2 |          1 |         31 |
+| d:\WeStuday_FrontEnd\app\styles\globals.css                                     | CSS                |         20 |          1 |          2 |         23 |
+| d:\WeStuday_FrontEnd\jsconfig.json                                              | JSON with Comments |          4 |          4 |          0 |          8 |
+| d:\WeStuday_FrontEnd\next.config.js                                             | JavaScript         |          2 |          1 |          2 |          5 |
+| d:\WeStuday_FrontEnd\package-lock.json                                          | JSON               |      1,509 |          0 |          1 |      1,510 |
+| d:\WeStuday_FrontEnd\package.json                                               | JSON               |         23 |          0 |          1 |         24 |
+| d:\WeStuday_FrontEnd\postcss.config.js                                          | JavaScript         |          6 |          0 |          1 |          7 |
+| d:\WeStuday_FrontEnd\public\img\hero-1.svg                                      | XML                |         14 |          0 |          1 |         15 |
+| d:\WeStuday_FrontEnd\public\img\hero-3.svg                                      | XML                |          7 |          0 |          1 |          8 |
+| d:\WeStuday_FrontEnd\public\img\hero-4.svg                                      | XML                |          6 |          0 |          1 |          7 |
+| d:\WeStuday_FrontEnd\tailwind.config.js                                         | JavaScript         |         16 |          2 |          1 |         19 |
+| Total                                                                           |                    |      1,894 |         15 |         53 |      1,962 |
++---------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
