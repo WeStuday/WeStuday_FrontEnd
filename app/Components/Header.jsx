@@ -4,8 +4,27 @@ import { useState } from 'react';
 import { AiOutlineCloseMini, AiOutlineMenuMini } from "../lib/@react-icons";
 import Logo from './Logo';
 import Button from './Button';
+import DropdownMenu from './DropdownMenu';
 
 function Header() {
+  const menuItems1 = [
+    { id:1,label: 'الصف الأول', link: '#' },
+    { id:2,label: 'الصف الثاني', link: '#' },
+    { id:2,label: 'الصف الثالث', link: '#' },
+    { id:2,label: 'الصف الرابع', link: '#' },
+  ];
+  const menuItems2 = [
+    { id:1,label: 'الصف الخامس', link: '#' },
+    { id:2,label: 'الصف السادس', link: '#' },
+    { id:2,label: 'الصف السابع', link: '#' },
+    { id:2,label: 'الصف الثامن', link: '#' },
+  ];
+  const menuItems3 = [
+    { id:1,label: 'الصف التاسع', link: '#' },
+    { id:2,label: 'الصف العاشر', link: '#' },
+    { id:2,label: 'الصف الحادي عشر', link: '#' },
+    { id:2,label: 'الصف الثاني عشر', link: '#' },
+  ];
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
@@ -15,7 +34,7 @@ function Header() {
             <div className="flex justify-between py-3 md:py-5 md:flex ">
               {/* LOGO */}
               <Link href="/">
-             <Logo/>
+                <Logo />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
@@ -24,9 +43,9 @@ function Header() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                  <AiOutlineCloseMini className="h-6 w-6" aria-hidden="true" />
+                    <AiOutlineCloseMini className="h-6 w-6" aria-hidden="true" />
                   ) : (
-                  <AiOutlineMenuMini className="h-6 w-6" aria-hidden="true" />
+                    <AiOutlineMenuMini className="h-6 w-6" aria-hidden="true" />
                   )}
                 </button>
               </div>
@@ -34,9 +53,8 @@ function Header() {
           </div>
           <div >
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 md:flex  md:items-center md:pb-0 md:mt-0 ${
-                navbar ? 'p-12 md:p-0 ' : 'hidden'
-              }`}
+              className={`flex-1 justify-self-center pb-3 mt-8 md:flex  md:items-center md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 ' : 'hidden'
+                }`}
             >
               <ul className="h-screen md:h-auto items-center justify-center md:flex  ">
                 <li className=" text-lg leading-7 font-medium text-[--color-alt] py-2 md:px-3 text-center border-b-2 md:border-b-0  ">
@@ -45,26 +63,24 @@ function Header() {
                   </Link>
                 </li>
                 <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0 md:hover:text-[--color-alt] ">
-                  <Link href="#blog" onClick={() => setNavbar(!navbar)}>
-                    المرحلة الابتدائية
-                  </Link>
+                <DropdownMenu name="المرحلة الابتدائية" items={menuItems1} />
+
                 </li>
                 <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0 md:hover:text-[--color-alt] ">
-                  <Link href="#contact" onClick={() => setNavbar(!navbar)}>
-                    المرحلة الاعدادية
-                  </Link>
+                <DropdownMenu name="المرحلة المتوسطة" items={menuItems2} />
                 </li>
-                <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0  md:hover:text-[--color-alt] ">
-                  <Link href="#projects" onClick={() => setNavbar(!navbar)}>
-                    المرحلة الثانوية
-                  </Link>
+                <li className=" dropdown inline-block relative text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0  md:hover:text-[--color-alt] ">
+                <DropdownMenu name="المرحلة الثانوية" items={menuItems3} />
+             
+                
                 </li>
               </ul>
-            <Button textinner="حول المنصة" nameLink='about' ClassNameAdd='md:mr-52 bg-[--seconderay]'/>
+              <Button textinner="حول المنصة" nameLink='about' ClassNameAdd='md:mr-52 bg-[--seconderay]' />
             </div>
           </div>
         </div>
       </nav>
+
     </div>
   );
 }

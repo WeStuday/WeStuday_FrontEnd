@@ -4,7 +4,7 @@ import Button from './Button'
 import '../styles/globals.css'
 const Hero = () => {
   return (
-    <div className='w-full flex-wrap md:flex-nowrap py-24 px-12  md:py-36 md:px-24 bg-[--background-end]  flex justify-center items-center gap-24'>
+    <div className='w-full font-Tajawal flex-wrap md:flex-nowrap py-24 px-12  md:py-36 md:px-24 bg-[--background-end]  flex justify-center items-center gap-24'>
       <div className='flex relative justify-start items-start gap-5 flex-col'>
           <div className='hidden md:block absolute left-64 -top-2 w-12 h-12 '>
           <Image

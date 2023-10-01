@@ -9,7 +9,7 @@ const EducationalSubjects = () => {
     setState(index)
 }
   return (
-    <div className='p-24'>
+    <div className='p-24 '>
         <div className='relative'>
         <div className='hidden md:block absolute right-16 top-2 w-56 h-56 '>
           <Image
@@ -35,7 +35,7 @@ const EducationalSubjects = () => {
         <div>
           {/* tabs this website  */}
         <div className="">
-            <div className="flex justify-center items-center gap-7 text-xl font-semibold leading-7 pt-12">
+            <div className="flex  justify-center items-center gap-7 text-xl font-semibold leading-7 pt-12">
                 <div onClick={() => action(1)} className={`${state === 1 ? "tab active-tab" : "tab"}`} >المرحلة الابتدائية</div>
                 <div onClick={() => action(2)} className={`${state === 2 ? "tab active-tab" : "tab"}`} >المرحلة الاعدادية</div>
                 <div onClick={() => action(3)} className={`${state === 3 ? "tab active-tab" : "tab"}`} >المرحلة الثانوية</div>

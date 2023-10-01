@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Logo = ({ClassNameH=""}) => {
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex font-Tajawal justify-center items-center">
     <div>
       <Image
         src="/img/logo.png"

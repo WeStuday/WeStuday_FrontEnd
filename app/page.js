@@ -17,12 +17,12 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <>
+    <div className='font-Tajawal'>
       <Hero/>
       <Features/>
       <EducationalSubjects/>
       <Benefits/>  
       <FrequentlyAsked/>
-      </>
+      </div>
   )
 }

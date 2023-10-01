@@ -1,12 +1,11 @@
 import React from "react";
 import Copyright from "./Copyright";
 import Link from 'next/link'
-import Image from "next/image";
-import { Logo } from ".";
+import Logo from "./Logo";
 const Footer = () => {
   return (
-    <div className=" bottom-0 right-0">
-      <footer className=" bg-[--background-end] text-center lg:px-[180px] text-[#606060] lg:text-right">
+    <div className=" bottom-0 font-Tajawal right-0 ">
+      <footer className=" bg-[--background-end]  border-t-2 text-center lg:px-[180px] text-[#606060] lg:text-right">
         <div className="mx-6 py-10 text-center md:text-right">
           <div className="grid-1 grid  gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="">

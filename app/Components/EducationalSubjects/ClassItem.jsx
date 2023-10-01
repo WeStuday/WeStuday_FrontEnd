@@ -4,7 +4,7 @@ import Button from '../Button'
 
 const ClassItem = ({nameClass, nameLink="ABPUT"}) => {
   return (
-    <div className='bg-white  flex justify-center items-center flex-col gap-4 shadow-xl p-4 max-w-xs rounded-2xl' >
+    <div className='font-Tajawal bg-white  flex justify-center items-center flex-col gap-4 shadow-xl p-4 max-w-xs rounded-2xl' >
     <div className='bg-[#6F547D]  rounded-2xl  w-72 h-52 flex justify-center items-end'>
    <div className='bg-[#5E406E] flex justify-center items-center flex-col pt-10  rounded-2xl  w-64 h-46 '>
    <h3 className='text-xl flex justify-center items-center font-semibold text-white  '> 

@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 const Features = () => {
   return (
-    <div className='w-full pb-20 h-auto bg-[--background-end]'>
+    <div className='w-full font-Tajawal pb-20 h-auto bg-[--background-end]'>
           <section className='bg-[--seconderay] text-white rounded-2xl mx-6 md:mx-24 p-6 flex justify-center items-center flex-wrap md:flex-nowrap space-x-4'>
         {/* feature one  */}
       <div className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>

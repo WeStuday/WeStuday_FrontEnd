@@ -3,7 +3,7 @@ import Image from 'next/image'
 import FrequentlyAsk from './FrequentlyAsk/FrequentlyAsk'
 const FrequentlyAsked = () => {
   return (
-    <div className='pt-24'>
+    <div className='pt-24 font-Tajawal'>
         
         <div className='relative'>
         <div className='hidden md:block absolute right-16  top-4 w-56 h-56 '>

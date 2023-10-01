@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Button from './Button'
 const Benefits = () => {
     return (
-        <div className='w-full flex-wrap md:flex-nowrap mb-12 px-12  md:pt-12 md:px-24 bg-[--background-end]  flex justify-center items-center gap-24'>
+        <div className='w-full font-Tajawal flex-wrap md:flex-nowrap mb-12 px-12  md:pt-12 md:px-24 bg-[--background-end]  flex justify-center items-center gap-24'>
             <div className='w-full relative md:w-1/2 '>
                 <div className='hidden md:block absolute left-32  -top-2 w-12 h-12 '>
                     <Image

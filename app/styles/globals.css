@@ -1,16 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* This is fonts cario local font */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;800;900&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --seconderay: #472758;
   --background-end: #FDF8EE;
   --color-alt:#FF7426
 }
-
+body{
+  font-family: 'Tajawal', sans-serif !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .image-hero::after {
   position:absolute;
   background-image: url('/public/img/hero-1.png');
@@ -22,9 +27,15 @@
   height: 100px;
 }
 
+.active-tabClass{
+  color:#FDF8EE;
+  border-bottom: 4px solid #FF7426;
+}
 .active-tab{
   color:#472758;
   border-bottom: 4px solid #FF7426;
 }
+
+
 
 
