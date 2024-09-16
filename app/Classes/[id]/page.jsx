@@ -2,13 +2,9 @@
 import { Classes } from "../../data/data";
 import React, { useState } from 'react'
 import dynamic from 'next/dynamic'
-const MaterialItem = dynamic(() => import('../materialItem'))
-import { useSearchParams } from 'next/navigation';
-
+import MaterialItem from "../MaterialItem";
 const page = ({ params: { id } }) => {
   const searchParams = useSearchParams();
-  const productId = searchParams.get('id');
-  const idSemester = searchParams.get('idSemester');
   const [state, setState] = useState(1);
 
   const classLevel = Classes.find((classItem) =>
