@@ -1,8 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from '../Button'
+import dynamic from 'next/dynamic'
+const  Button = dynamic(()=>import ('../Button'))
 
-const ClassItem = ({nameClass, nameLink="ABPUT"}) => {
+const ClassItem = ({nameClass, nameLink=""}) => {
   return (
     <div className='font-Tajawal bg-white  flex justify-center items-center flex-col gap-4 shadow-xl p-4 max-w-xs rounded-2xl' >
     <div className='bg-[#6F547D]  rounded-2xl  w-72 h-52 flex justify-center items-end'>
@@ -10,7 +11,7 @@ const ClassItem = ({nameClass, nameLink="ABPUT"}) => {
    <h3 className='text-xl flex justify-center items-center font-semibold text-white  '> 
    الصف {nameClass}   </h3>
     <Image
-      src='/img/class2.png'
+      src='/img/class2.webp'
       width={150}
       height={100}
       className=' '

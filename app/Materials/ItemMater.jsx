@@ -1,6 +1,6 @@
 import React from 'react'
-import AccordionMater from './AccordionMater';
-
+import dynamic from 'next/dynamic';
+const AccordionMater=dynamic(()=>import('./AccordionMater'))
 const ItemMater = ({ data , Visible}) => {
     return (
         <div className=" lg:w-[100%]  pt-8">

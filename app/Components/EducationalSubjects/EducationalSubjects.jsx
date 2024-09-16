@@ -1,84 +1,82 @@
 "use client"
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
-import ClassItem from './ClassItem';
+import dynamic from 'next/dynamic'
+const ClassItem = dynamic(() => import('./ClassItem'))
 
 const EducationalSubjects = () => {
   const [state, setState] = useState(1);
   const action = (index) => {
-    setState(index)
-}
+    setState(index);
+  };
+
   return (
-    <div className='p-24 '>
-        <div className='relative'>
-        <div className='hidden md:block absolute right-16 top-2 w-56 h-56 '>
+    <div className='px-6 md:px-12 lg:px-24 py-12'>
+      <div className='relative'>
+        {/* Decorative Images */}
+        <div className='hidden md:block absolute right-8 top-2 w-24 h-24 lg:w-56 lg:h-56'>
           <Image
-          src="/img/arrow.png"
-          alt="صورة الصفحة الهيرو موقع ندرس"
-          width={80}
-          height={80}
-        />
-          </div>
-          <div className='hidden md:block absolute -left-24 -top-6 w-56 h-56 '>
+            src="/img/arrow.webp"
+            alt="صورة الصفحة الهيرو ندرس"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div className='hidden md:block absolute -left-12 -top-6 w-24 h-24 lg:w-56 lg:h-56'>
           <Image
-          src="/img/lamp.png"
-          alt="صورة الصفحة الهيرو موقع ندرس"
-          width={80}
-          height={80}
-        />
+            src="/img/lamp.png"
+            alt="صورة الصفحة الهيرو ندرس"
+            width={80}
+            height={80}
+          />
+        </div>
+
+        {/* Title and Description */}
+        <div className='text-center'>
+          <h1 className='text-2xl md:text-3xl font-semibold p-2'>المناهج التعليمية</h1>
+          <p className='text-sm md:text-base'>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+        </div>
+      </div>
+        {/* Tabs */}
+        <div className="flex justify-center items-center gap-5 md:gap-7 text-base md:text-xl font-semibold leading-7 pt-12">
+          <div onClick={() => action(1)} className={`${state === 1 ? "tab active-tab" : "tab"}`}>المرحلة الابتدائية</div>
+          <div onClick={() => action(2)} className={`${state === 2 ? "tab active-tab" : "tab"}`}>المرحلة الاعدادية</div>
+          <div onClick={() => action(3)} className={`${state === 3 ? "tab active-tab" : "tab"}`}>المرحلة الثانوية</div>
+        </div>
+      {/* Content */}
+      <div className="flex flex-col justify-between items-center mt-12">
+        <div className="w-full sm:w-3/4 lg:w-[750px]">
+          {/* Tab Content */}
+          <div className={`${state === 1 ? "block transition-all" : "hidden"}`}>
+            <div className='flex justify-center items-center gap-6 md:gap-8 flex-wrap'>
+              <ClassItem nameClass='الأول الابتدائي' nameLink='/Classes/1' />
+              <ClassItem nameClass='الثاني الابتدائي' nameLink='/Classes/2' />
+              <ClassItem nameClass='الثالث الابتدائي' nameLink='/Classes/3' />
+              <ClassItem nameClass='الرابع الابتدائي' nameLink='/Classes/4' />
+            </div>
           </div>
-            <div className='text-center'>
-            <h1 className='text-3xl font-semibold p-2'>المناهج التعليمية</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+          <div className={`${state === 2 ? "block transition-all" : "hidden"}`}>
+            <div className='flex justify-center items-center gap-6 md:gap-8 flex-wrap'>
+              <ClassItem nameClass='الخامس الإعدادي' nameLink='/Classes/5' />
+              <ClassItem nameClass='السادس الإعدادي' nameLink='/Classes/6' />
+              <ClassItem nameClass='السابع الإعدادي' nameLink='/Classes/7' />
+              <ClassItem nameClass='الثامن الإعدادي' nameLink='/Classes/8' />
             </div>
+          </div>
+          <div className={`${state === 3 ? "block transition-all" : "hidden"}`}>
+            <div className='flex justify-center items-center gap-6 md:gap-8 flex-wrap'>
+              <ClassItem nameClass='التاسع الثانوي' nameLink='/Classes/9' />
+              <ClassItem nameClass='العاشر الثانوي' nameLink='/Classes/10' />
+              <ClassItem nameClass='الحادي الثانوي' nameLink='/Classes/11' />
+              <ClassItem nameClass='الثاني عشر الثانوي' nameLink='/Classes/12' />
+            </div>
+          </div>
         </div>
-        <div>
-          {/* tabs this website  */}
-        <div className="">
-            <div className="flex  justify-center items-center gap-7 text-xl font-semibold leading-7 pt-12">
-                <div onClick={() => action(1)} className={`${state === 1 ? "tab active-tab" : "tab"}`} >المرحلة الابتدائية</div>
-                <div onClick={() => action(2)} className={`${state === 2 ? "tab active-tab" : "tab"}`} >المرحلة الاعدادية</div>
-                <div onClick={() => action(3)} className={`${state === 3 ? "tab active-tab" : "tab"}`} >المرحلة الثانوية</div>
-            </div>
 
-            <div className="pt-10">
-                <div className={`${state === 1 ? " block transition-all" : "hidden"}`}>
-                    <div className=' flex justify-center items-center gap-8 flex-wrap'>
-                <ClassItem nameClass='الأول الابتدائي' />
-                <ClassItem nameClass='الأول الابتدائي' />
-                <ClassItem nameClass='الأول الابتدائي' />
-                <ClassItem nameClass='الأول الابتدائي' />
-                <ClassItem nameClass='الأول الابتدائي' />
-                <ClassItem nameClass='الأول الابتدائي' />
-                    </div>
-                </div>
-                <div className={`${state === 2 ? "block transition-all" : "hidden"}`}>
-                <div className=' flex justify-center items-center gap-8 flex-wrap'>
-                <ClassItem nameClass='الثاني الابتدائي' />
-                <ClassItem nameClass='الثاني الابتدائي' />
-                <ClassItem nameClass='الثاني الابتدائي' />
-                <ClassItem nameClass='الثاني الابتدائي' />
-                <ClassItem nameClass='الثاني الابتدائي' />
-                <ClassItem nameClass='الثاني الابتدائي' />
-                    </div>
-                </div>
-                <div className={`${state === 3 ? "block transition-all" : "hidden"}`}>
-                <div className=' flex justify-center items-center gap-8 flex-wrap'>
-                <ClassItem nameClass='الثالث الابتدائي' />
-                <ClassItem nameClass='الثالث الابتدائي' />
-                <ClassItem nameClass='الثالث الابتدائي' />
-                <ClassItem nameClass='الثالث الابتدائي' />
-                <ClassItem nameClass='الثالث الابتدائي' />
-                <ClassItem nameClass='الثالث الابتدائي' />
-                    </div>
-                </div>
 
-            </div>
-        </div>
-          
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default EducationalSubjects
+export default EducationalSubjects;

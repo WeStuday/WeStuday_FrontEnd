@@ -1,7 +1,9 @@
 import React from "react";
-import Copyright from "./Copyright";
 import Link from 'next/link'
-import Logo from "./Logo";
+import dynamic from "next/dynamic";
+const Copyright = dynamic(()=>import('./Copyright'))
+const Logo = dynamic(()=>import('./Header/Logo'))
+
 const Footer = () => {
   return (
     <div className=" bottom-0 font-Tajawal right-0 ">
@@ -13,7 +15,7 @@ const Footer = () => {
                 <Logo ClassNameH="text-[#00052E]" />
               </div>
               <p>
-                موقع ندرس أسلوب للتفوق بطريقة آمنة توفر وقت وجهد الطلاب
+                ندرس أسلوب للتفوق بطريقة آمنة توفر وقت وجهد الطلاب
                 أسلوب للتفوق بطريقة آمنة توفر وقت وجهد الطلاب
               </p>
             </div>
@@ -39,7 +41,7 @@ const Footer = () => {
             </div>
             <div className="">
               <div className="mb-4 text-[#00052E] flex justify-center font-semibold uppercase md:justify-start">
-                عن موقع ندرس
+                عن ندرس
               </div>
               <p className="mb-4">
                 <span className=" dark:text-[#606060]">

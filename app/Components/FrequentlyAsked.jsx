@@ -1,6 +1,7 @@
-import React from 'react'
 import Image from 'next/image'
-import FrequentlyAsk from './FrequentlyAsk/FrequentlyAsk'
+import dynamic from 'next/dynamic'
+const FrequentlyAsk = dynamic(()=>import('./FrequentlyAsk/FrequentlyAsk'))
+
 const FrequentlyAsked = () => {
   return (
     <div className='pt-24 font-Tajawal'>
@@ -8,8 +9,8 @@ const FrequentlyAsked = () => {
         <div className='relative'>
         <div className='hidden md:block absolute right-16  top-4 w-56 h-56 '>
           <Image
-          src="/img/casual.png"
-          alt="صورة الصفحة الهيرو موقع ندرس"
+          src="/img/casual.webp"
+          alt="صورة الصفحة الهيرو ندرس"
           width={80}
           height={80}
         />
@@ -17,7 +18,7 @@ const FrequentlyAsked = () => {
           <div className='hidden md:block absolute left-8  top-0 w-56 h-56 '>
           <Image
           src="/img/lamp.png"
-          alt="صورة الصفحة الهيرو موقع ندرس"
+          alt="صورة الصفحة الهيرو ندرس"
           width={80}
           height={80}
         />

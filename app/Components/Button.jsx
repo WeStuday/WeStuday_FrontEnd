@@ -6,7 +6,8 @@ const Button = ({textinner,nameLink,ClassNameAdd=""}) => {
     <Link href={`${nameLink}`}>
         <button className={`${ClassNameAdd} font-Tajawal text-white py-3 px-6 hover:shadow-xl transition-all  hover:bg-[#58336c] rounded-full`}>
             {textinner} 
-        </button> </Link>
+        </button> 
+        </Link>
   )
 }
 

@@ -5,7 +5,6 @@ import {
     AiOutlineArrowLeft as AiOutlineArrowLeftMini,
 } from "react-icons/ai";
 
-
 import {
     BsChevronDown as BsChevronDownMini,
 }from "react-icons/bs";
@@ -13,6 +12,7 @@ import {
 import {
     BiSolidLeftArrow as BiSolidLeftArrowMini,
 } from 'react-icons/bi'
+
 export{
     AiOutlineCloseMini,
     AiOutlineMenuMini,

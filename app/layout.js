@@ -1,18 +1,20 @@
-import  Footer from './Components/Footer';
-import  Header from './Components/Header';
+import dynamic from 'next/dynamic';
+const Footer = dynamic(() => import('./Components/Footer'))
+const Header = dynamic(() => import('./Components/Header/Header'))
 import './styles/globals.css'
 
 export const metadata = {
-  title: 'موقع ندرس',
-  description: 'موقع ندرس لرفع الملفات  المدرسية'
+  title: 'ندرس',
+  description: 'ندرس لرفع الملفات  المدرسية'
 }
+
 export default function RootLayout({ children }) {
   return (
     <html lang="ar" dir="rtl">
       <body >
-      <Header/>
+        <Header />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   )

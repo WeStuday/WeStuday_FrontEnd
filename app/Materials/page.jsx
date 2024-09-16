@@ -1,10 +1,11 @@
 import React from 'react'
 import { AiOutlineArrowLeftMini } from "../lib/@react-icons";
-import Button from '../Components/Button'
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
+const ItemMater=dynamic(()=>import('./ItemMater'))
+import Link from 'next/link'
+const Button=dynamic(()=>import('../Components/Button'))
 import {faqs} from '../data/data'
-import ItemMater from './ItemMater';
-
 const page = () => {
   return (
     <div className='mt-40 md:mx-24'>
@@ -14,7 +15,9 @@ const page = () => {
             الصف الثالث الإعدادي - الفصل الدراسي الأول
         </h3>
       <div className="flex justify-center items-center gap-2 cursor-pointer ">
-      <h3 className='text-[#00052E] text-xl font-semibold underline'>العودة لصفحة المنهج</h3>
+        <Link href="/">
+        <h3 className='text-[#00052E] text-xl font-semibold underline'>العودة لصفحة المنهج</h3>
+        </Link>
         <AiOutlineArrowLeftMini/>
       </div>
      </div>
@@ -29,8 +32,8 @@ const page = () => {
       
       <div>
       <Image
-        src="/img/material.png"
-        alt="صورة الصفحة الرئيسية موقع ندرس"
+        src="/img/material.webp"
+        alt="صورة الصفحة الرئيسية ندرس"
         width={450}
         height={350}
       />

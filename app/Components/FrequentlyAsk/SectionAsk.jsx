@@ -1,5 +1,5 @@
-import React from 'react'
-import Accordion from './Accordion';
+import dynamic  from "next/dynamic"
+const  Accordion = dynamic(()=>import('./Accordion'))
 
 const SectionAsk = ({ data , Visible}) => {
     return (

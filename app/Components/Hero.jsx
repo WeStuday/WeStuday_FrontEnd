@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import Button from './Button'
+import dynamic from 'next/dynamic';
+const Button=dynamic(()=>import('./Button'))
 import '../styles/globals.css'
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
           <div className='hidden md:block absolute left-64 -top-2 w-12 h-12 '>
           <Image
           src="/img/hero-1.svg"
-          alt="صورة الصفحة الهيرو موقع ندرس"
+          alt="صورة الصفحة الهيرو ندرس"
           width={50}
           height={50}
         />
@@ -24,8 +25,8 @@ const Hero = () => {
 
       <div className='w-full md:w-1/2'>
         <Image
-          src="/img/hero.png"
-          alt="صورة الصفحة الهيرو موقع ندرس"
+          src="/img/hero.webp"
+          alt="صورة الصفحة الهيرو ندرس"
           width={700}
           height={700}
         />

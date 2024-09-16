@@ -1,30 +1,20 @@
 "use client";
 import Link from 'next/link';
 import { useState } from 'react';
-import { AiOutlineCloseMini, AiOutlineMenuMini } from "../lib/@react-icons";
-import Logo from './Logo';
-import Button from './Button';
-import DropdownMenu from './DropdownMenu';
-
+import { AiOutlineCloseMini, AiOutlineMenuMini } from "../../lib/@react-icons";
+import Logo from '../Header/Logo'
+import DropdownMenu from '../Header/DropdownMenu'
+import Button from '../Button'
+import { Classes } from '@/app/data/data'
 function Header() {
-  const menuItems1 = [
-    { id:1,label: 'الصف الأول', link: '#' },
-    { id:2,label: 'الصف الثاني', link: '#' },
-    { id:2,label: 'الصف الثالث', link: '#' },
-    { id:2,label: 'الصف الرابع', link: '#' },
-  ];
-  const menuItems2 = [
-    { id:1,label: 'الصف الخامس', link: '#' },
-    { id:2,label: 'الصف السادس', link: '#' },
-    { id:2,label: 'الصف السابع', link: '#' },
-    { id:2,label: 'الصف الثامن', link: '#' },
-  ];
-  const menuItems3 = [
-    { id:1,label: 'الصف التاسع', link: '#' },
-    { id:2,label: 'الصف العاشر', link: '#' },
-    { id:2,label: 'الصف الحادي عشر', link: '#' },
-    { id:2,label: 'الصف الثاني عشر', link: '#' },
-  ];
+  const filterItemsByStage = (stage) => {
+    const level = Classes.find(item => item.AcademicStage === stage);
+    return level ? level.classes : [];
+  };
+  const primaryLevel = Classes.find(item => item.AcademicStage === 'Primary');
+  const preparatoryLevel = Classes.find(item => item.AcademicStage === 'Preparatory');
+  const secondaryLevel = Classes.find(item => item.AcademicStage === 'Secondary');
+
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
@@ -39,11 +29,11 @@ function Header() {
               {/* HAMBURGER BUTTON FOR MOBILE */}
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-1 text-gray-700 rounded-md outline-none focus:border-[--color-alt] focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
-                    <AiOutlineCloseMini className="h-6 w-6" aria-hidden="true" />
+                    <AiOutlineCloseMini size={17} className="h-6 w-6" aria-hidden="true" />
                   ) : (
                     <AiOutlineMenuMini className="h-6 w-6" aria-hidden="true" />
                   )}
@@ -63,19 +53,33 @@ function Header() {
                   </Link>
                 </li>
                 <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0 md:hover:text-[--color-alt] ">
-                <DropdownMenu name="المرحلة الابتدائية" items={menuItems1} />
-
+                  {primaryLevel && (
+                    <DropdownMenu
+                      nameLevel={primaryLevel.nameLevel}
+                      stage="Primary"
+                      items={filterItemsByStage('Primary')}
+                    />)}                </li>
+                <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0 md:hover:text-[--color-alt] ">
+                  {preparatoryLevel && (
+                    <DropdownMenu
+                      nameLevel={preparatoryLevel.nameLevel}
+                      stage="Preparatory"
+                      items={filterItemsByStage('Preparatory')}
+                    />
+                  )}
                 </li>
                 <li className=" text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0 md:hover:text-[--color-alt] ">
-                <DropdownMenu name="المرحلة المتوسطة" items={menuItems2} />
+                  {secondaryLevel && (
+                    <DropdownMenu
+                      nameLevel={secondaryLevel.nameLevel}
+                      stage="Secondary"
+                      items={filterItemsByStage('Secondary')}
+                    />
+                  )}
                 </li>
-                <li className=" dropdown inline-block relative text-lg text-black py-2 px-3 text-center  border-b-2 md:border-b-0  md:hover:text-[--color-alt] ">
-                <DropdownMenu name="المرحلة الثانوية" items={menuItems3} />
-             
-                
-                </li>
+
               </ul>
-              <Button textinner="حول المنصة" nameLink='about' ClassNameAdd='md:mr-52 bg-[--seconderay]' />
+              <Button textinner="حول المنصة" nameLink='/about' ClassNameAdd='md:mr-52 bg-[--seconderay]' />
             </div>
           </div>
         </div>
