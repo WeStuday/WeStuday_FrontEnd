@@ -1,10 +1,18 @@
+"use client"; // Add this line at the top of the file
+
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
 const FrequentlyAsk = dynamic(()=>import('./FrequentlyAsk/FrequentlyAsk'))
-
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const FrequentlyAsked = () => {
+  useEffect(() => {
+    AOS.init()
+  },[])
   return (
-    <div className='pt-24 font-Tajawal'>
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom" className='pt-24 font-Tajawal'>
         
         <div className='relative'>
         <div className='hidden md:block absolute right-16  top-4 w-56 h-56 '>

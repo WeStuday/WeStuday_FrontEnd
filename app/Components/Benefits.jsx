@@ -1,9 +1,16 @@
-import React from 'react'
+"use client"; // Add this line at the top of the file
+
 import Image from 'next/image'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const Benefits = () => {
+    useEffect(() => {
+        AOS.init()
+      },[])
     return (
         <div className='w-full font-Tajawal flex-wrap p-4 md:flex-nowrap mt-16 mb-12 px-12  md:pt-12 md:px-24 bg-[--background-end]  flex justify-center items-center gap-24'>
-            <div className='w-full relative md:w-1/2 '>
+            <div  data-aos="fade-up-left" className='w-full relative md:w-1/2 '>
                 <div className='hidden md:block absolute left-32  -top-2 w-12 h-12 '>
                     <Image
                         src="/img/hero-1.svg"
@@ -36,7 +43,7 @@ const Benefits = () => {
                     className='mr-16'
                 />
             </div>
-            <div className=' flex  justify-start items-start gap-5 flex-col'>
+            <div  data-aos="fade-up-right" className=' flex  justify-start items-start gap-5 flex-col'>
 
 
                 <h1 className='w-full  text-[33px] md:text-[35px] font-semibold'>

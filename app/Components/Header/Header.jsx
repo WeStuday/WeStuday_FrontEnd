@@ -1,12 +1,17 @@
 "use client";
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AiOutlineCloseMini, AiOutlineMenuMini } from "../../lib/@react-icons";
 import Logo from '../Header/Logo'
 import DropdownMenu from '../Header/DropdownMenu'
 import Button from '../Button'
 import { Classes } from '@/app/data/data'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Header() {
+  useEffect(() => {
+    AOS.init()
+  },[])
   const filterItemsByStage = (stage) => {
     const level = Classes.find(item => item.AcademicStage === stage);
     return level ? level.classes : [];
@@ -18,16 +23,16 @@ function Header() {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className="w-full  px-12 md:px-0 bg-[--background-end] font-Tajawal fixed top-0 left-0 right-0 z-10">
+      <nav  className="w-full  px-12 md:px-0 bg-[--background-end] font-Tajawal fixed top-0 left-0 right-0 z-10">
         <div className="justify-between mx-auto pt-2 lg:w-[85rem] md:items-center md:flex">
           <div>
-            <div className="flex justify-between py-3 md:py-5 md:flex ">
+            <div  data-aos="zoom-in-left" className="flex justify-between py-3 md:py-5 md:flex ">
               {/* LOGO */}
               <Link href="/">
                 <Logo />
               </Link>
               {/* HAMBURGER BUTTON FOR MOBILE */}
-              <div className="md:hidden">
+              <div  className="md:hidden">
                 <button
                   className="p-1 text-gray-700 rounded-md outline-none focus:border-[--color-alt] focus:border"
                   onClick={() => setNavbar(!navbar)}
@@ -42,7 +47,7 @@ function Header() {
             </div>
           </div>
           <div >
-            <div
+            <div data-aos="zoom-in-down"
               className={`flex-1 justify-self-center pb-3 mt-8 md:flex  md:items-center md:pb-0 md:mt-0 ${navbar ? 'p-12 md:p-0 ' : 'hidden'
                 }`}
             >

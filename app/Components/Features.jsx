@@ -1,11 +1,19 @@
-import React from 'react'
+"use client"; // Add this line at the top of the file
+
 import Image from 'next/image'
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const Features = () => {
+  useEffect(() => {
+    AOS.init()
+  },[])
   return (
     <div className='w-full font-Tajawal pb-20 h-auto bg-[--background-end]'>
       <section className='bg-[--seconderay] text-white rounded-2xl mx-6 md:mx-24 p-6 flex justify-center items-center flex-wrap md:flex-nowrap space-x-4'>
         {/* feature one  */}
-        <div className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
+        <div data-aos="fade-up"
+     data-aos-duration="3000" className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
           <div className='bg-[#71567E]  p-2 flex items-center justify-center rounded-2xl'>
             <Image
               src='/img/certification.webp'
@@ -26,7 +34,8 @@ const Features = () => {
         </div>
 
         {/* feature Thow  */}
-        <div className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
+        <div data-aos="fade-up"
+     data-aos-duration="3000" className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
           <div className='bg-[#71567E]  p-2 flex items-center justify-center rounded-2xl'>
             <Image
               src='/img/exam.png'
@@ -47,7 +56,8 @@ const Features = () => {
         </div>
         {/* feature Three  */}
 
-        <div className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
+        <div data-aos="fade-up"
+     data-aos-duration="3000" className='md:w-1/3 flex  justify-between  gap-4 items-center px-4 py-6'>
           <div className='bg-[#71567E]  p-2 flex items-center justify-center rounded-2xl'>
             <Image
               src='/img/online-test.webp'
