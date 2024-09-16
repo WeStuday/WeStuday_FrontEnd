@@ -1,10 +1,8 @@
 "use client"
 import { Classes } from "../../data/data";
 import React, { useState } from 'react'
-import dynamic from 'next/dynamic'
 import MaterialItem from "../MaterialItem";
 const page = ({ params: { id } }) => {
-  const searchParams = useSearchParams();
   const [state, setState] = useState(1);
 
   const classLevel = Classes.find((classItem) =>
