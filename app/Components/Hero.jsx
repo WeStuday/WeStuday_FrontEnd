@@ -20,6 +20,7 @@ const Hero = () => {
           alt="صورة الصفحة الهيرو ندرس"
           width={50}
           height={50}
+          priority
         />
           </div>
     
@@ -36,6 +37,7 @@ const Hero = () => {
           alt="صورة الصفحة الهيرو ندرس"
           width={700}
           height={700}
+          priority
         />
       </div>
 

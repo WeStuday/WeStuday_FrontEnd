@@ -16,6 +16,7 @@ const ClassItem = ({nameClass, nameLink=""}) => {
       height={100}
       className=' '
       alt="the image is certification"
+      priority
       />
    </div>
     </div>

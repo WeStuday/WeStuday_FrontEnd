@@ -8,6 +8,8 @@ const Logo = ({ClassNameH=""}) => {
         alt="صورة الصفحة الرئيسية ندرس"
         width={50}
         height={50}
+        
+        priority
       />
     </div>
     <h1 className={`font-black  text-xl leading-9 ${ClassNameH}`}>ندرس</h1>

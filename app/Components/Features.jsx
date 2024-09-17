@@ -21,6 +21,7 @@ const Features = () => {
               height={20}
               className='mt-2 w-36 md:w-20 h-[40px]'
               alt="the image is certification"
+              priority
             />
           </div>
 
@@ -43,6 +44,7 @@ const Features = () => {
               height={20}
               className='mt-2 w-36 md:w-20 h-[40px]'
               alt="the image is certification"
+              priority
             />
           </div>
 
@@ -65,6 +67,7 @@ const Features = () => {
               height={40}
               className='mt-2 w-36 md:w-20 h-[40px]'
               alt="the image is certification"
+              priority
             />
           </div>
 

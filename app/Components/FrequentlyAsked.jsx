@@ -21,6 +21,7 @@ const FrequentlyAsked = () => {
           alt="صورة الصفحة الهيرو ندرس"
           width={80}
           height={80}
+          priority
         />
           </div>
           <div className='hidden md:block absolute left-8  top-0 w-56 h-56 '>
@@ -29,6 +30,7 @@ const FrequentlyAsked = () => {
           alt="صورة الصفحة الهيرو ندرس"
           width={80}
           height={80}
+          priority
         />
           </div>
             <div className='text-center'>

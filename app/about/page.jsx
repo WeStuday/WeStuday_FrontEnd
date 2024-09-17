@@ -34,6 +34,7 @@ const page = () => {
         alt="صورة الصفحة الرئيسية ندرس"
         width={150}
         height={150}
+        priority
       />
       </div>
       </div>
@@ -46,6 +47,7 @@ const page = () => {
         alt="صورة الصفحة الرئيسية ندرس"
         width={150}
         height={150}
+        priority
       />
       </div>
       <div className='w-2/3'>

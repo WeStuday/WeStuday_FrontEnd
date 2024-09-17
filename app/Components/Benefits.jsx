@@ -33,6 +33,7 @@ const Benefits = () => {
                         alt="صورة الصفحة الهيرو ندرس"
                         width={70}
                         height={70}
+                        priority
                     />
                 </div>
                 <Image
@@ -41,6 +42,7 @@ const Benefits = () => {
                     width={380}
                     height={380}
                     className='mr-16'
+                    priority
                 />
             </div>
             <div  data-aos="fade-up-right" className=' flex  justify-start items-start gap-5 flex-col'>
@@ -58,6 +60,7 @@ const Benefits = () => {
                                 height={20}
                                 className='mt-2  w-36 md:w-8 h-[25px]'
                                 alt="the image is certification"
+                                priority
                             />
                         </div>
 
@@ -78,6 +81,7 @@ const Benefits = () => {
                                 height={20}
                                 className='mt-2  w-36 md:w-8 h-[25px]'
                                 alt="the image is certification"
+                                priority
                             />
                         </div>
 

@@ -24,6 +24,7 @@ const EducationalSubjects = () => {
             alt="صورة الصفحة الهيرو ندرس"
             width={80}
             height={80}
+            priority 
           />
         </div>
         <div className='hidden md:block absolute -left-12 -top-6 w-24 h-24 lg:w-56 lg:h-56'>
@@ -32,6 +33,7 @@ const EducationalSubjects = () => {
             alt="صورة الصفحة الهيرو ندرس"
             width={80}
             height={80}
+            priority
           />
         </div>
 

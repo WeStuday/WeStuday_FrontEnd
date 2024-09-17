@@ -12,6 +12,7 @@ const MaterialItem = ({ nameMaterial, numberLeatures, nameLink = "" }) => {
           height={200}
           className=''
           alt="the image is certification"
+          priority
         />
         <div className='absolute top-4 left-4 rounded-3xl w-fit text-xs h-fit py-1 px-3 bg-[#00B267] text-white '>
           تنزيل مجاني
