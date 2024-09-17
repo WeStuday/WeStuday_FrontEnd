@@ -1,9 +1,16 @@
-import React from 'react'
+"use client"
 import Image from 'next/image';
-
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 const page = () => {
+  useEffect(() => {
+    AOS.init()
+  },[])
+
   return (
-    <div className='my-40 '>
+    <div data-aos="fade-up"
+    data-aos-duration="3000"  className='my-40 '>
       <h1 className='font-Tajawal bg-[#58336c] text-white text-4xl font-bold p-24 w-full text-center rounded-xl mb-8'>
         حول المنصة
       </h1>
@@ -21,7 +28,7 @@ const page = () => {
           وتتميز منصة مستر محمد فاروق بأنها متاحة للطلاب في جميع أنحاء العالم، ويمكن الحصول على دروسها بسهولة عبر الإنترنت. وبفضل جودة التعليم التي تقدمها المنصة، فإن الطلاب يحصلون على فرصة لتحسين مهاراتهم في اللغة الإنجليزية بشكل كبير وتحقيق نتائج ملموسة.
         </p>
       </div>
-      <div className='w-1/3 mr-48 mt-24'>
+      <div  className='w-1/3 mr-48 mt-24'>
       <Image
         src="/img/about.png"
         alt="صورة الصفحة الرئيسية ندرس"
